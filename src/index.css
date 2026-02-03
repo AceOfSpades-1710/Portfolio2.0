@@ -634,32 +634,66 @@ hr{
 .project-visual {
   width: 100%;
   height: 360px;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   border-radius: 16px;
 }
 
 .project-content h2 {
   font-size: 2.4rem;
+  font-family: "Bruno Ace", sans-serif;
 }
 
 .project-content h3 {
   opacity: 0.7;
   margin-bottom: 1rem;
+  font-family: "Archivo", sans-serif;
+}
+
+.project-content p {
+  opacity: 0.7;
+  margin-bottom: 1rem;
+  font-family: "Archivo", sans-serif;
+  margin-bottom: 2rem;
 }
 
 .project-tags {
   display: flex;
-  gap: 0.6rem;
+  justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .tag {
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
-  background: #eee;
-  font-size: 0.75rem;
+  color: black;
+  background: linear-gradient(
+    90deg,
+    #b14df8,
+    #e3a8f6fb,
+    #d7b3f1
+  );
+  font-size: 0.7rem;
+  font-family: "Bruno Ace";
+
+  animation: floatY 3s ease-in-out infinite;
+  will-change: transform;
 }
+
+@keyframes floatY {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
 
 .carousel-btn {
   position: absolute;
@@ -674,6 +708,24 @@ hr{
 
 .carousel-btn.next {
   right: 1rem;
+}
+
+.btn{
+  text-decoration: none;
+  font-family: "Fredoka";
+  margin-right: 2rem;
+  color:#fefefeaf;
+  font-size: 1.2rem;
+}
+.btnghost{
+  text-decoration: none;
+  font-family: "Fredoka";
+  color:#fefefeaf;
+  font-size: 1.2rem;
+}
+
+.btn:hover,.btnghost:hover{
+  color:#b14df8;
 }
 
 /* Mobile */
@@ -1002,7 +1054,7 @@ hr{
 
   /* ---------- HERO ---------- */
   .hero {
-    margin: 0 2%;
+    margin: 0px 2px;
     outline-width: 3px;
   }
 
@@ -1014,7 +1066,7 @@ hr{
 
   .hero-title {
     padding-left: 3rem;
-    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-size: clamp(3.5rem, 10vw, 7rem);
   }
 
   .hero-image img {
