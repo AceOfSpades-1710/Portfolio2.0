@@ -1,4 +1,4 @@
-
+import Heroimg from "/src/assets/Hero3.png"
 function Hero() {
   return (
     <section id="top" className="hero">
@@ -9,7 +9,7 @@ function Hero() {
       </div>
 
       <div className="hero-image">
-        <img src="./src/assets/Hero3.png" alt="Hero" />
+        <img src={Heroimg} alt="Hero" />
       </div>
     </section>
   );

@@ -1,9 +1,9 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-import vercel from "./assets/icons/vercel.png";
-import react from "./assets/icons/react.png";
-import node from "./assets/icons/nodejs.png";
+import vercel from "./assets/icons/Vercel.png";
+import react from "./assets/icons/React.png";
+import node from "./assets/icons/Nodejs.png";
 
 const Footer = () => {
   return (
