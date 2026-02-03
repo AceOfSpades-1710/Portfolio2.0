@@ -1002,7 +1002,7 @@ hr{
 
   /* ---------- HERO ---------- */
   .hero {
-    margin: 0 4%;
+    margin: 0 2%;
     outline-width: 3px;
   }
 
@@ -1014,7 +1014,7 @@ hr{
 
   .hero-title {
     padding-left: 3rem;
-    font-size: clamp(3.5rem, 10vw, 7rem);
+    font-size: clamp(3.5rem, 8vw, 7rem);
   }
 
   .hero-image img {
