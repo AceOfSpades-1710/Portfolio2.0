@@ -765,36 +765,74 @@ hr{
   }
 }
 
-/* ---------- SERVICES ---------- */
-@media (max-width: 900px) {
-  .parent-services {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+/* =====================
+   SERVICES – MOBILE FIX
+===================== */
+
+@media (max-width: 768px) {
+  .Services-parent{
+    margin: 30% 5%;
   }
 
-  .ServiceTitle {
-    font-size: 3rem;
+  /* Stack services vertically */
+  .parent-services {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .ServiceTitle{
+    font-size: 3.5rem;
+  }
+
+  .div1-services,
+  .div2-services,
+  .div3-services {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Card sizing */
+  .card {
+    width: 200px;
+    height: 230px;
+  }
+
+  /* Make content panels behave like normal blocks */
+  .content-panel-wrapper {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 320px;
+
+    margin-top: 1.2rem;
+
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .content-panel {
+    padding: 1rem 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
     text-align: center;
   }
 }
 
-/* ---------- CARDS (touch-safe) ---------- */
-@media (hover: none) {
-  .card:hover {
-    transform: none;
-    box-shadow: 15px 15px 30px rgb(39, 39, 39),
-                -1px -1px 1px rgb(44, 44, 44);
+/* ---------- Small phones ---------- */
+@media (max-width: 480px) {
+
+  .card {
+    width: 180px;
+    height: 210px;
   }
 
-  .card__hero::before {
-    opacity: 1;
-  }
-
-  .card__job-title {
-    opacity: 1;
-    transform: translateY(0);
+  .content-panel {
+    font-size: 0.85rem;
+    padding: 0.9rem 1rem;
   }
 }
+
 
 /* ---------- FLOATING CONTENT PANEL ---------- */
 @media (max-width: 768px) {
@@ -812,6 +850,7 @@ hr{
 @media (max-width: 768px) {
   .contact {
     padding: 8%;
+    margin-top: 30%;
     outline-width: 2px;
   }
 
@@ -829,7 +868,7 @@ hr{
 /* ---------- PROJECTS ---------- */
 @media (max-width: 768px) {
   .projects {
-    margin: 20% 5%;
+    margin: 0% 5%;
   }
 
   .project-content h2 {
@@ -905,20 +944,20 @@ hr{
     top: auto;
     z-index: 0;
 
-    opacity: 0.9;
+    opacity: 1;
     transform: none;
   }
 
   .hero-image img {
     padding-top: 0;
     width: 100%;
-    max-height: 45vh;
+    max-height: 50vh;
     object-fit: contain;
   }
 
   /* Disable hover-based layering on mobile */
   .hero:has(.hero-title:hover) .hero-image {
-    opacity: 0.35;
+    opacity: 1;
     transform: none;
   }
 }
@@ -938,5 +977,131 @@ hr{
   .hero-image img {
     width: 100%;
     max-height: 40vh;
+  }
+}
+
+/* =====================
+   TABLET FIXES
+   769px – 1024px
+===================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* ---------- NAV ---------- */
+  .nav {
+    padding: 12px 22px;
+  }
+
+  .nav-list {
+    gap: 48px;
+  }
+
+  .nav-link {
+    font-size: 17px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    margin: 0 4%;
+    outline-width: 3px;
+  }
+
+  .hero-hi {
+    padding-left: 3rem;
+    margin-top: 18%;
+    font-size: 2.4rem;
+  }
+
+  .hero-title {
+    padding-left: 3rem;
+    font-size: clamp(3.5rem, 10vw, 7rem);
+  }
+
+  .hero-image img {
+    padding-top: 12%;
+    max-height: 80%;
+  }
+
+  /* ---------- NEWS ---------- */
+  .news-carousel {
+    height: 4.2rem;
+  }
+
+  .news-item {
+    font-size: 20px;
+    padding: 0 32px;
+  }
+
+  .news-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* ---------- SERVICES ---------- */
+  .Services-parent {
+    margin: 12% 4%;
+  }
+
+  .ServiceTitle {
+    font-size: 3.5rem;
+  }
+
+  .parent-services {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .card {
+    width: 210px;
+    height: 245px;
+  }
+
+  .content-panel-wrapper {
+    width: 480px;
+    right: 2%;
+    top: 65%;
+  }
+
+  .content-panel {
+    font-size: 1.05rem;
+    padding: 1.5rem;
+  }
+
+  /* ---------- CONTACT ---------- */
+  .contact {
+    gap: 3rem;
+    padding: 6%;
+  }
+
+  .contact-title {
+    font-size: 3.2rem;
+  }
+
+  /* ---------- PROJECTS ---------- */
+  .projects {
+    margin: 10% 4%;
+  }
+
+  .project-slide {
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+    gap: 2rem;
+  }
+
+  .project-visual {
+    height: 300px;
+  }
+
+  .project-content h2 {
+    font-size: 2rem;
+  }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    padding-left: 2%;
+  }
+
+  .footer-socials {
+    font-size: 2.2rem;
   }
 }
