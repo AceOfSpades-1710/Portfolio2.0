@@ -1,12 +1,15 @@
 import { useState, useRef, useEffect, useLayoutEffect } from 'react'
 import { gsap } from 'gsap'
+import Webdev from "/src/assets/Fore_Hero/Webdev.png"
+import ML from '/src/assets/Fore_Hero/ML.jpg'
+import GD from '/src/assets/Fore_Hero/GD.jpg'
 
 const projects = [
   {
     title: 'Portfolio Website',
     subtitle: 'React + Vite Portfolio',
     description: 'My personal portfolio showcasing projects, blog links and contact.',
-    img: './src/assets/Fore_Hero/Webdev.png',
+    img: Webdev,
     repo: '#',
     live: '#',
     tags: ['React', 'Vite', 'CSS']
@@ -15,7 +18,7 @@ const projects = [
     title: 'AI Chatbot',
     subtitle: 'Customer care assistant',
     description: 'LLM-powered assistant with a Node/Express backend and context memory.',
-    img: './src/assets/Fore_Hero/ML.jpg',
+    img: ML,
     repo: '#',
     live: '#',
     tags: ['Python', 'Flask', 'AI']
@@ -24,7 +27,7 @@ const projects = [
     title: 'Design Gallery',
     subtitle: 'Graphic design showcase',
     description: 'A gallery site for design work, implemented with accessibility in mind.',
-    img: './src/assets/Fore_Hero/GD.jpg',
+    img: GD,
     repo: '#',
     live: '#',
     tags: ['Figma', 'Illustrator']
