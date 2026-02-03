@@ -1,36 +1,77 @@
 import { useState, useRef, useEffect, useLayoutEffect } from 'react'
 import { gsap } from 'gsap'
-import Webdev from "/src/assets/Fore_Hero/Webdev.png"
-import ML from '/src/assets/Fore_Hero/ML.jpg'
-import GD from '/src/assets/Fore_Hero/GD.jpg'
+import portfolio from "/src/assets/projects/portfolio.png"
+import Nero from '/src/assets/projects/Nero.png'
+import ML from '/src/assets/projects/MLOps.png'
+import Vanessa from '/src/assets/projects/Vanessa.png'
+import Sentinel from '/src/assets/projects/Sentinel.png'
+import Harvest from '/src/assets/projects/Harvest.png'
+import DSN from '/src/assets/projects/DSN.png'
+import ASL from '/src/assets/projects/ASL.jpg'
 
 const projects = [
   {
-    title: 'Portfolio Website',
-    subtitle: 'React + Vite Portfolio',
-    description: 'My personal portfolio showcasing projects, blog links and contact.',
-    img: Webdev,
+    title: 'Portfolio1.0',
+    subtitle: 'Static Portfolio Website',
+    description: 'My first personal portfolio showcasing projects, blog links and contact.',
+    img: portfolio,
     repo: '#',
-    live: '#',
-    tags: ['React', 'Vite', 'CSS']
+    live: 'https://portfolio-website-git-main-sjs-projects-5e9c291d.vercel.app',
+    tags: ['HTML', 'JavaScript', 'CSS']
   },
   {
-    title: 'AI Chatbot',
-    subtitle: 'Customer care assistant',
-    description: 'LLM-powered assistant with a Node/Express backend and context memory.',
+    title: 'Neural Network - from Scratch',
+    subtitle: '2-Layer Neural Network using numpy only',
+    description: 'A neural network built from scratch using only NumPy to classify handwritten digits from the MNIST dataset with 88.47% accuracy.',
     img: ML,
     repo: '#',
     live: '#',
-    tags: ['Python', 'Flask', 'AI']
+    tags: ['Python', 'Numpy', 'Activation functions', 'Loss functions', 'Weight and bias updates']
   },
   {
-    title: 'Design Gallery',
-    subtitle: 'Graphic design showcase',
-    description: 'A gallery site for design work, implemented with accessibility in mind.',
-    img: GD,
-    repo: '#',
+    title: 'Dot Sentinel',
+    subtitle: 'AI Powered Cyber Security Dashboard',
+    description: 'AI for detecting anomalous network behavior from PCAP traffic and translating low-level alerts into human-readable, actionable alerts.',
+    img: Sentinel,
+    repo: 'https://github.com/AceOfSpades-1710/Dot-Sentinel',
+    live: 'https://dot-sentinel.vercel.app/',
+    tags: ['Python', 'GenAI', 'ReactJS', 'API Integration', 'Postgres', 'CyberSecurity', 'ML']
+  },
+  {
+    title: 'Vanessa',
+    subtitle: 'AI Customer Support Bot',
+    description: 'AI Customer Support Bot with contextual memory, FAQ support, session tracking on Neon Postgres, and a responsive chat interface.',
+    img: Vanessa,
+    repo: 'https://github.com/AceOfSpades-1710/Vanessa/tree/main',
     live: '#',
-    tags: ['Figma', 'Illustrator']
+    tags: ['Python', 'GenAI', 'HTML', 'API Integration', 'Postgres']
+  },
+  {
+    title: 'Harvest Hub',
+    subtitle: 'Group Project',
+    description: 'AI-powered web platform designed to help farmers make informed, data-driven agricultural decisions.',
+    img: Harvest,
+    repo: 'https://github.com/yagyeshvishnoi/EPICS?tab=readme-ov-file',
+    live: 'https://frontend-ankits-projects-4916b64e.vercel.app',
+    tags: ['ReactJS', 'Flask', 'OpenCV', 'AWS', 'ML']
+  },
+  {
+    title: 'AES Image Encryption',
+    subtitle: 'DSN Project',
+    description: 'Securing digital images by applying cryptographic techniques. AES is a symmetric encryption algorithm widely used for securing sensitive data, including images.',
+    img: DSN,
+    repo: 'https://github.com/ArpitGupta4957/DSN-Project',
+    live: 'https://arpitgupta4957.github.io/DSN-Project/',
+    tags: ['ReactJS', 'AES', 'Python', 'GitHub', 'API Integration']
+  },
+  {
+    title: 'ASL Translator',
+    subtitle: 'Hand Sign Language Detection System (26 Alphabets)',
+    description: 'The Python project employs TensorFlow, OpenCV, and Keras to interpret American Sign Language (ASL) hand gestures. It utilizes a database of 7800 images for training a model, a Convolutional Neural Network (CNN), to classify hand gestures into their corresponding alphabet categories.',
+    img: ASL,
+    repo: 'https://github.com/aviruddh1234/ASL-Translator-',
+    live: '#',
+    tags: ['Python', 'Keras/Tensorflow', 'OpenCV', 'MediaPipe', 'Numpy', 'CVZone']
   }
 ]
 
@@ -179,7 +220,7 @@ export default function Projects() {
 
                 <div className="project-cta">
                   <a className="btn" href={p.repo}>View Repo</a>
-                  <a className="btn ghost" href={p.live}>Live Demo</a>
+                  <a className="btnghost" href={p.live}>Live Demo</a>
                 </div>
               </div>
             </article>
