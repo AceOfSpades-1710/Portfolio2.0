@@ -18,7 +18,7 @@ const projects = [
     img: Shree,
     repo: 'https://github.com/AceOfSpades-1710/Shree-Bhojnalaya',
     live: 'https://shree-bhojnalaya.vercel.app',
-    tags: ['ReactJS', 'NodeJS', 'API', 'DBMS]
+    tags: ['ReactJS', 'NodeJS', 'API', 'DBMS']
   },
   {
     title: 'Portfolio1.0',
