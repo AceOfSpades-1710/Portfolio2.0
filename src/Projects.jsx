@@ -8,8 +8,18 @@ import Sentinel from '/src/assets/projects/Sentinel.png'
 import Harvest from '/src/assets/projects/Harvest.png'
 import DSN from '/src/assets/projects/DSN.png'
 import ASL from '/src/assets/projects/ASL.jpg'
+import Shree from '/src/assets/projects/Shree.png'
 
 const projects = [
+  {
+    title: 'Shree Bhojnalaya',
+    subtitle: 'Responsive WebPage',
+    description: 'A website with real-time updated customer and owner logins and dashboards',
+    img: Shree,
+    repo: 'https://github.com/AceOfSpades-1710/Shree-Bhojnalaya',
+    live: 'https://shree-bhojnalaya.vercel.app',
+    tags: ['ReactJS', 'NodeJS', 'API', 'DBMS]
+  },
   {
     title: 'Portfolio1.0',
     subtitle: 'Static Portfolio Website',
