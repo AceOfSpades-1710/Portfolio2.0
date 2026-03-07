@@ -44,7 +44,7 @@ const projects = [
     description: 'AI for detecting anomalous network behavior from PCAP traffic and translating low-level alerts into human-readable, actionable alerts.',
     img: Sentinel,
     repo: 'https://github.com/AceOfSpades-1710/Dot-Sentinel',
-    live: 'https://dot-sentinel.vercel.app/',
+    live: 'https://dot-sentinel-2h3e.vercel.app',
     tags: ['Python', 'GenAI', 'ReactJS', 'API Integration', 'Postgres', 'CyberSecurity', 'ML']
   },
   {
