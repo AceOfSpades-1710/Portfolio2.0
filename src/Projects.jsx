@@ -13,7 +13,7 @@ import Shree from '/src/assets/projects/Shree.png'
 const projects = [
   {
     title: 'Shree Bhojnalaya',
-    subtitle: 'Responsive WebPage',
+    subtitle: 'Responsive Website Serving 100+ Customers!',
     description: 'A website with real-time updated customer and owner logins and dashboards',
     img: Shree,
     repo: 'https://github.com/AceOfSpades-1710/Shree-Bhojnalaya',
