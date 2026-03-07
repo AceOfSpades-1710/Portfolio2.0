@@ -13,8 +13,8 @@ import Shree from '/src/assets/projects/Shree.png'
 const projects = [
   {
     title: 'Shree Bhojnalaya',
-    subtitle: 'Responsive Website Serving 100+ Customers!',
-    description: 'A website with real-time updated customer and owner logins and dashboards',
+    subtitle: 'Serving 100+ Customers',
+    description: 'Made this responsive website to scale a local buisness near my university!',
     img: Shree,
     repo: 'https://github.com/AceOfSpades-1710/Shree-Bhojnalaya',
     live: 'https://shree-bhojnalaya.vercel.app',
