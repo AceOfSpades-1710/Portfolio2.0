@@ -25,7 +25,7 @@ const projects = [
     subtitle: 'Static Portfolio Website',
     description: 'My first personal portfolio showcasing projects, blog links and contact.',
     img: portfolio,
-    repo: '#',
+    repo: 'https://github.com/AceOfSpades-1710/Portfolio-Website',
     live: 'https://portfolio-website-git-main-sjs-projects-5e9c291d.vercel.app',
     tags: ['HTML', 'JavaScript', 'CSS']
   },
@@ -34,8 +34,8 @@ const projects = [
     subtitle: '2-Layer Neural Network using numpy only',
     description: 'A neural network built from scratch using only NumPy to classify handwritten digits from the MNIST dataset with 88.47% accuracy.',
     img: ML,
-    repo: '#',
-    live: '#',
+    repo: 'https://github.com/AceOfSpades-1710/Neural-Net-using-NumPy',
+    live: '',
     tags: ['Python', 'Numpy', 'Activation functions', 'Loss functions', 'Weight and bias updates']
   },
   {
@@ -53,7 +53,7 @@ const projects = [
     description: 'AI Customer Support Bot with contextual memory, FAQ support, session tracking on Neon Postgres, and a responsive chat interface.',
     img: Vanessa,
     repo: 'https://github.com/AceOfSpades-1710/Vanessa/tree/main',
-    live: '#',
+    live: '',
     tags: ['Python', 'GenAI', 'HTML', 'API Integration', 'Postgres']
   },
   {
@@ -80,7 +80,7 @@ const projects = [
     description: 'The Python project employs TensorFlow, OpenCV, and Keras to interpret American Sign Language (ASL) hand gestures. It utilizes a database of 7800 images for training a model, a Convolutional Neural Network (CNN), to classify hand gestures into their corresponding alphabet categories.',
     img: ASL,
     repo: 'https://github.com/aviruddh1234/ASL-Translator-',
-    live: '#',
+    live: '',
     tags: ['Python', 'Keras/Tensorflow', 'OpenCV', 'MediaPipe', 'Numpy', 'CVZone']
   }
 ]
