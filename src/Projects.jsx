@@ -25,7 +25,7 @@ const projects = [
     title: 'HOOMANS',
     subtitle: 'Website On Human Evolution',
     description: 'Implemented 3D components and animations',
-    img: hoomans,
+    img: Hoomans,
     repo: 'https://github.com/AceOfSpades-1710/Hoomans',
     live: 'https://hoomans.vercel.app',
     tags: ['GSAP', 'Lenis', 'ReactJS', 'UI/UX']
