@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'Shree Bhojnalaya',
     subtitle: 'Serving 100+ Customers',
-    description: 'Made this responsive website to scale a local buisness near my university!',
+    description: 'Made this responsive website to scale a local buisness!',
     img: Shree,
     repo: 'https://github.com/AceOfSpades-1710/Shree-Bhojnalaya',
     live: 'https://shree-bhojnalaya.vercel.app',
