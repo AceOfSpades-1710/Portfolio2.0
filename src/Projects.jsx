@@ -9,6 +9,7 @@ import Harvest from '/src/assets/projects/Harvest.png'
 import DSN from '/src/assets/projects/DSN.png'
 import ASL from '/src/assets/projects/ASL.jpg'
 import Shree from '/src/assets/projects/Shree.png'
+import Hoomans from '/src/assets/projects/Hoomans.png'
 
 const projects = [
   {
@@ -20,6 +21,16 @@ const projects = [
     live: 'https://shree-bhojnalaya.vercel.app',
     tags: ['ReactJS', 'NodeJS', 'API', 'DBMS']
   },
+  {
+    title: 'HOOMANS',
+    subtitle: 'Website On Human Evolution',
+    description: 'Implemented 3D components and animations',
+    img: hoomans,
+    repo: 'https://github.com/AceOfSpades-1710/Hoomans',
+    live: 'https://hoomans.vercel.app',
+    tags: ['GSAP', 'Lenis', 'ReactJS', 'UI/UX']
+  },
+
   {
     title: 'Portfolio1.0',
     subtitle: 'Static Portfolio Website',
