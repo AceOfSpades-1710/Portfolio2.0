@@ -23,7 +23,7 @@ const projects = [
   {
     title: 'Portfolio1.0',
     subtitle: 'Static Portfolio Website',
-    description: 'My first personal portfolio showcasing projects, blog links and contact.',
+    description: 'My first personal portfolio showcasing my journey.',
     img: portfolio,
     repo: 'https://github.com/AceOfSpades-1710/Portfolio-Website',
     live: 'https://portfolio-website-git-main-sjs-projects-5e9c291d.vercel.app',
@@ -58,7 +58,7 @@ const projects = [
   },
   {
     title: 'Harvest Hub',
-    subtitle: 'Group Project',
+    subtitle: 'AI Driven Agricultural Insights',
     description: 'AI-powered web platform designed to help farmers make informed, data-driven agricultural decisions.',
     img: Harvest,
     repo: 'https://github.com/yagyeshvishnoi/EPICS?tab=readme-ov-file',
@@ -66,8 +66,8 @@ const projects = [
     tags: ['ReactJS', 'Flask', 'OpenCV', 'AWS', 'ML']
   },
   {
-    title: 'AES Image Encryption',
-    subtitle: 'DSN Project',
+    title: 'Image Encryptor',
+    subtitle: 'AES Encryption Algorithm Implementation',
     description: 'Securing digital images by applying cryptographic techniques. AES is a symmetric encryption algorithm widely used for securing sensitive data, including images.',
     img: DSN,
     repo: 'https://github.com/ArpitGupta4957/DSN-Project',
@@ -76,7 +76,7 @@ const projects = [
   },
   {
     title: 'ASL Translator',
-    subtitle: 'Hand Sign Language Detection System (26 Alphabets)',
+    subtitle: 'Hand Sign Language Detection System',
     description: 'The Python project employs TensorFlow, OpenCV, and Keras to interpret American Sign Language (ASL) hand gestures. It utilizes a database of 7800 images for training a model, a Convolutional Neural Network (CNN), to classify hand gestures into their corresponding alphabet categories.',
     img: ASL,
     repo: 'https://github.com/aviruddh1234/ASL-Translator-',
@@ -229,8 +229,12 @@ export default function Projects() {
                 </div>
 
                 <div className="project-cta">
-                  <a className="btn" href={p.repo}>View Repo</a>
-                  <a className="btnghost" href={p.live}>Live Demo</a>
+                  <a className="btn" href={p.repo} 
+                  target="_blank" 
+                  rel="noopener noreferrer">View Repo</a>
+                  <a className="btnghost" href={p.live}
+                  target="_blank" 
+                  rel="noopener noreferrer">Live Demo</a>
                 </div>
               </div>
             </article>
